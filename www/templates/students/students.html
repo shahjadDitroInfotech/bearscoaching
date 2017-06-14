@@ -1,0 +1,20 @@
+<ion-modal-view>
+	<ion-view  view-title="Marie Simpson" id="levels" class="backgroundImage" hide-nav-bar="false">
+		<ion-content  scroll="true"  delegate-handle="mainScroll">
+
+
+	<h1  class="studenttitle" style="text-align:center;padding: 10px;
+    font-size: 18px;">Welcome to {{levelname12}}  Marie Students !</h1>
+			
+			<div class="list">
+				<a class="item item-avatar" href="" ng-click="studentDetail(item.id)" ng-repeat="item in studData">
+					<img src="{{studentpath}}/{{item.image}}">
+					<h2>{{item.name | capitalize}}</h2>
+					<p>{{item.name}} age {{item.age}}</p>
+				</a>
+			</div>
+
+		</ion-content>
+	</ion-view>
+</ion-modal-view>
+

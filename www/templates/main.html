@@ -1,0 +1,41 @@
+<ion-modal-view>
+<ion-view id ="login" hide-nav-bar="true" class="backgroundImage">
+    <ion-content  scroll="true">
+     <div id="login_image" >
+	    	<div class="header padding text-center logodata">
+	    		<img src="img/big_logo.png" alt="Your logo here"  width="30%" height="auto" class="logoImage"/>
+	    	</div>
+
+	    	<div class="header padding text-center panda">
+	    		<img src="img/bear.png" alt="Your logo here" width="30%" height="auto"/>
+	    	</div>
+
+	    	<h1 class="getstarted" style="text-align:center">Get Started !</h1>
+    	</div>
+          <form ng-submit="doLogin()" name="loginForm">
+            <div class="row responsive-md">
+                <div class="col col-50 col-offset-25">
+                    <div class="list">
+                        <label class="item item-input">
+                      <i class="fa fa-user fa-6" aria-hidden="true"></i>
+                       &nbsp; &nbsp;<input type="email" ng-model="loginData.username"  placeholder="xyz@gmail.com" required>
+
+                        </label>
+                        <label class="item item-input">
+                       <i class="fa fa-lock fa-6" aria-hidden="true"></i>
+                         &nbsp; &nbsp;<input type="password" placeholder="***********" ng-model="loginData.password" required> 
+                        </label>
+
+                      <button class="button button-block button-positive sign_in" type="submit" ng-disabled="loginForm.$invalid">
+                        SIGN  IN
+                    </button>
+
+                    <div class="signup"><center class="insignup"><span class="donaccount">Don't have an account ?</span>  <a href ng-click= "dashBoard()"  class="achorsignup"> SIGN UP</a></center><div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </ion-content>
+</ion-view>
+
+</ion-modal-view>

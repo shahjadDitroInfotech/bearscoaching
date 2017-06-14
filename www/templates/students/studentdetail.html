@@ -1,0 +1,29 @@
+<ion-modal-view>
+	<ion-view  view-title="Marie Simpson" id="levels" class="backgroundImage" hide-nav-bar="false">
+		<ion-content scroll="false"  delegate-handle="mainScroll">
+
+		<h1  class="studenttitle" style="text-align:center;padding: 10px;
+    font-size: 18px;" ng-repeat="item in studetail">{{item.name | capitalize}}   personal detail</h1>
+			
+			<div class="list card" ng-repeat="item in studetail" >
+				<div class="item item-avatar">
+					<img src="{{studentpath}}/{{item.image}}">
+					<h2>{{item.name | capitalize}}</h2>
+
+
+
+					<p ng-controller="StudentsCtrl"> {{ today | date}}<p>
+					<!-- <p>November 05, 1955<p> -->
+				</div>
+				<div class="item item-body">
+					<img class="full-image" src="{{studentpath}}/{{item.image}}" style="width: 40%;margin: 0 auto; display: block;">
+					<p>
+					     {{item.name | capitalize}} student belong from the saharanpur and his aim to become a software developer,his age is {{item.age}}. {{item.name}} student belon from the saharanpur and his aim to become a software developer,his age is {{item.age}}.
+					</p>
+					
+				</div>
+
+			</div>
+		</ion-content>
+	</ion-view>
+</ion-modal-view>

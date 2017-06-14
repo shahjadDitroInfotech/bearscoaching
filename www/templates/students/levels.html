@@ -1,0 +1,22 @@
+<ion-modal-view>
+	<ion-view  view-title="Marie Simpson" id="levels" class="backgroundImage" hide-nav-bar="false">
+		<ion-content padding="true" scroll="true"  delegate-handle="mainScroll">
+			<div id="dashboardlogo" >
+				<div class="header padding text-center pandadashboard">
+					<img src="img/bear.png" alt="Your logo here" width="30%" height="auto"/>
+				</div>
+				<h1 class="getstarted levelheading" style="text-align:center;color:#FB6D00">Welcome to Marie Students !</h1>
+			</div>
+			<div class="dashboardSection levelsection">	
+				<a href="#/app/studentvideo/{{item.id}}/{{item.name}}" class="header padding text-center classesData level"  ng-repeat="item in levelData">
+					<div>
+						<img src="img/icos_15.png" alt="Your logo here"  width="50%" height="auto"/>
+						<p class="Sectiontitle">{{item.name}}</p>
+					</div>
+				</a>
+			</div>
+		</ion-content>
+	</ion-view>
+</ion-modal-view>
+
+

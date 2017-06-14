@@ -1,0 +1,49 @@
+<ion-modal-view>
+<ion-view id="signup" hide-nav-bar="true">
+    <ion-content scroll="true">
+
+         <div id="signup_image" >
+            <div class="header padding text-center logodata">
+                <img src="img/front-logo.png" alt="Your logo here"  width="60%" height="auto" class="logoImage"/>
+            </div>
+
+            <h1 class="getstarted" style="text-align:center">Sign Up!</h1>
+        </div>
+
+     <form ng-submit="signUp()" name="signUp12">
+            <div class="row responsive-md">
+                <div class="col col-50 col-offset-25">
+
+                    <div class="list">
+                        <label class="item item-input">
+                  
+                      <input type="email" ng-model="loginData.username"  placeholder="Email" required>
+
+                        </label>
+                        <label class="item item-input">
+                          
+                         <input type="password" placeholder="Password" ng-model="loginData.password" required>
+                        </label>
+                    </div>
+                    <button class="button button-block button-positive" type="submit" ng-disabled="signUp12.$invalid">
+                       Sign UP
+                    </button>
+                    <div class="row row-no-padding">
+                        <div class="col">
+                           <!--  <button class="button button-clear button-light">
+                                Forgot password?
+                            </button> -->
+                        </div>
+                        <div class="col text-right">
+                            <button class="button button-clear button-light" ng-click= "login()">
+                               Back
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </ion-content>
+</ion-view>
+
+</ion-modal-view>
